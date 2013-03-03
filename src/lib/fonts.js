@@ -4,10 +4,10 @@
 
 goog.provide('treesaver.fonts');
 
-goog.require('treesaver.fonts.googleadapter');
 goog.require('treesaver.debug');
 goog.require('treesaver.dom');
 goog.require('treesaver.events');
+goog.require('treesaver.fonts.googleadapter');
 
 goog.scope(function() {
   var fonts = treesaver.fonts,
@@ -23,7 +23,7 @@ goog.scope(function() {
    */
    fonts.load = function(callback) {
     if (!window['treesaverFonts']) {
-      debug.info("No treesaverFonts specified; nothing to do here.");
+      debug.info('No treesaverFonts specified; nothing to do here.');
       callback();
       return;
     }

@@ -6,8 +6,8 @@ goog.provide('treesaver.layout.Grid');
 
 goog.require('treesaver.capabilities');
 goog.require('treesaver.debug');
-goog.require('treesaver.dom');
 goog.require('treesaver.dimensions');
+goog.require('treesaver.dom');
 goog.require('treesaver.layout.Column');
 goog.require('treesaver.layout.Container');
 
@@ -464,7 +464,7 @@ goog.scope(function() {
 
   /**
    * @param {!string} themeName
-   * @return {boolean} True if the grid is compatible with the given theme
+   * @return {boolean} True if the grid is compatible with the given theme.
    */
   Grid.prototype.hasTheme = function(themeName) {
     return this.classes.indexOf(themeName) !== -1;
@@ -473,7 +473,7 @@ goog.scope(function() {
   /**
    * Eliminate a grid if it does not meet the current browser capabilities
    *
-   * @return {boolean} False if the grid does not qualify
+   * @return {boolean} False if the grid does not qualify.
    */
   Grid.prototype.capabilityFilter = function() {
     if (!this.requirements) {
@@ -487,7 +487,7 @@ goog.scope(function() {
    * Eliminate a grid if it does not fit within the specified size
    *
    * @param {!treesaver.dimensions.Size} size
-   * @return {boolean} False if the grid does not qualify
+   * @return {boolean} False if the grid does not qualify.
    */
   Grid.prototype.sizeFilter = function(size) {
     var innerSize = {
@@ -694,7 +694,7 @@ goog.scope(function() {
 
   if (goog.DEBUG) {
     Grid.prototype.toString = function() {
-      return "[Grid " + this.classes + "]";
+      return '[Grid ' + this.classes + ']';
     };
   }
 });

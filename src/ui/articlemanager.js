@@ -141,7 +141,7 @@ goog.scope(function() {
         ArticleManager.initialDocument.requirements = doc.requirements;
 
         // Copy over the meta data inside the initial document
-        initialDocumentMeta.forEach(function (meta) {
+        initialDocumentMeta.forEach(function(meta) {
           var name = meta.getAttribute('name'),
               content = meta.getAttribute('content');
 

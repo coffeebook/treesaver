@@ -26,8 +26,8 @@ goog.scope(function() {
     /**
      * Add a CSS class to an element
      *
-     * @param {!Element} el
-     * @param {!string} className
+     * @param {!Element} el HTML DOM element.
+     * @param {!string} className Stub element.
      */
     dom.addClass = function(el, className) {
       className.split(/\s+/).forEach(function(name) {
@@ -38,8 +38,8 @@ goog.scope(function() {
     /**
      * Remove a CSS class to an element
      *
-     * @param {!Element} el
-     * @param {!string} className
+     * @param {!Element} el Stub element.
+     * @param {!string} className Stub element.
      */
     dom.removeClass = function(el, className) {
       return el.classList.remove(className);
@@ -49,8 +49,8 @@ goog.scope(function() {
      * Check if an element has the given class
      * Hat Tip: Dean Edwards http://dean.edwards.name/IE7/caveats/
      *
-     * @param {!Element|!HTMLDocument} el
-     * @param {!string} className
+     * @param {!Element|!HTMLDocument} el Stub element.
+     * @param {!string} className Stub element.
      * @return {boolean} True if the element has that class.
      */
     dom.hasClass = function(el, className) {
@@ -58,7 +58,7 @@ goog.scope(function() {
     };
 
     /**
-     * @param {!Element} el
+     * @param {!Element} el Stub element.
      * @return {!Array.<string>} Array of all the element's classes.
      */
     dom.classes = function(el) {
@@ -104,7 +104,7 @@ goog.scope(function() {
   /**
    * Use querySelectorAll on an element tree
    *
-   * @param {!string} queryString
+   * @param {!string} queryString Stub sentence.
    * @param {HTMLDocument|Element=} root Element root (optional).
    * @return {!Array.<Element>} Array of matching elements.
    */
@@ -120,9 +120,9 @@ goog.scope(function() {
    * Whether the element has the given attribute. Proxy because IE doesn't
    * have the native method
    *
-   * @param {!Element} el
-   * @param {!string}  propName
-   * @return {boolean}
+   * @param {!Element} el Stub sentence.
+   * @param {!string} propName Stub sentence.
+   * @return {boolean} Stub sentence.
    */
   dom.hasAttr = function(el, propName) {
     return el.hasAttribute(propName);
@@ -139,7 +139,7 @@ goog.scope(function() {
   /**
    * Whether the element has a custom Treesaver-namespaced attribute
    *
-   * @param {!Element} el
+   * @param {!Element} el Stub sentence.
    * @param {!string} propName Unescaped.
    * @return {boolean}
    */
@@ -150,7 +150,7 @@ goog.scope(function() {
   /**
    * Whether the element has a custom Treesaver-namespaced attribute
    *
-   * @param {!Element} el
+   * @param {!Element} el Stub sentence.
    * @param {!string} propName Unescaped.
    * @return {string}
    */
@@ -161,7 +161,7 @@ goog.scope(function() {
   /**
    * Remove all children from an Element
    *
-   * @param {!Element} el
+   * @param {!Element} el Stub sentence.
    */
   dom.clearChildren = function(el) {
     // TODO: Blank innerHTML instead?
@@ -183,7 +183,7 @@ goog.scope(function() {
   /**
    * OuterHTML wrapper for browsers that don't have it
    *
-   * @param {!Element} el
+   * @param {!Element} el Stub sentence.
    * @return {!string} The outer HTML of the element.
    */
   dom.outerHTML = function(el) {
@@ -208,7 +208,7 @@ goog.scope(function() {
   /**
    * Make an element from HTML
    *
-   * @param {!string} html
+   * @param {!string} html Stub sentence.
    * @return {?Element}
    */
   dom.createElementFromHTML = function(html) {
@@ -259,7 +259,7 @@ goog.scope(function() {
   /**
    * Find the first ancestor of the given tagName for an element
    *
-   * @param {!Node} el
+   * @param {!Node} el Stub sentence.
    * @param {!string} tagName
    * @return {?Node}
    */
@@ -287,7 +287,7 @@ goog.scope(function() {
   /**
    * Helper for disposing of images in order to avoid memory leaks in iOS
    *
-   * @param {!Element} img
+   * @param {!Element} img Stub sentence.
    */
   dom.disposeImg = function(img) {
     dom.imgCache_.push(img);

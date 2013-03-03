@@ -72,7 +72,7 @@ goog.scope(function() {
       window.msRequestAnimationFrame ||
       function(callback, element) {
         return window.setTimeout(callback, scheduler.TASK_INTERVAL);
-      }
+      };
   }();
 
   /**

@@ -4,14 +4,14 @@ goog.require('treesaver.capabilities');
 goog.require('treesaver.debug');
 goog.require('treesaver.dom');
 goog.require('treesaver.events');
-goog.require('treesaver.dom');
+goog.require('treesaver.object');
 goog.require('treesaver.storage');
 goog.require('treesaver.ui.Article');
 // Avoid circular ref
 // goog.require('treesaver.ui.ArticleManager');
 goog.require('treesaver.ui.TreeNode');
-goog.require('treesaver.object');
 goog.require('treesaver.uri');
+goog.require('treesaver.dom');
 
 /**
  * Class representing "documents" which are usually HTML pages that contain one or
@@ -147,7 +147,7 @@ goog.scope(function() {
     // Copy all meta tags with a name and content into the meta-data
     // object. The values specified in the <meta> tag take precendence
     // over values in the index file.
-    dom.querySelectorAll('meta[name]', node).forEach(function (meta) {
+    dom.querySelectorAll('meta[name]', node).forEach(function(meta) {
       var name = meta.getAttribute('name'),
           content = meta.getAttribute('content');
 

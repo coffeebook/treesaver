@@ -72,27 +72,27 @@ goog.scope(function() {
   };
 
   googleadapter.internal_ = {
-    "active": function() {
+    'active': function() {
       debug.info('googleadapter.active');
       googleadapter.complete_(googleadapter.fontState_);
     },
-    "fontactive": function(family) {
+    'fontactive': function(family) {
       debug.info('WebFont.fontactive ' + family);
       googleadapter.fontState_[family] = 'active';
     },
-    "fontinactive": function(family) {
+    'fontinactive': function(family) {
       debug.info('WebFont.fontinactive ' + family);
       googleadapter.fontState_[family] = 'inactive';
     },
-    "fontloading": function(family) {
+    'fontloading': function(family) {
       debug.info('WebFont.fontloading ' + family);
       googleadapter.fontState_[family] = 'loading';
     },
-    "inactive": function() {
+    'inactive': function() {
       debug.info('WebFont.inactive');
       googleadapter.complete_(googleadapter.fontState_);
     },
-    "loading": function() {
+    'loading': function() {
       debug.info('WebFont.loading');
     }
   };

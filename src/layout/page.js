@@ -4,8 +4,8 @@ goog.require('treesaver.capabilities');
 goog.require('treesaver.debug');
 goog.require('treesaver.dimensions');
 goog.require('treesaver.dom');
-goog.require('treesaver.template');
 goog.require('treesaver.layout.Grid');
+goog.require('treesaver.template');
 goog.require('treesaver.ui.Scrollable');
 
 goog.scope(function() {
@@ -518,7 +518,7 @@ goog.scope(function() {
         //   1) Current and next block's first line fit (all good!)
         //   2) Current only fits partially, which means that it'll likely share
         //      the next column with it's sibling, thus fufilling the requirement
-        //   3) Current fits completely, but the first line of the next block 
+        //   3) Current fits completely, but the first line of the next block
         //      doesnt -- need to delay current (but only if this isn't a virgin
         //      column) [which we check for later]
         //
@@ -827,7 +827,7 @@ goog.scope(function() {
     dimensions.setCssPx(node, 'height', colHeight);
 
     // Join string array and insert into column node
-    node.innerHTML = blockStrings.join("");
+    node.innerHTML = blockStrings.join('');
 
     // Apply overhang to the first block
     if (firstBlock && node.firstChild) {
@@ -905,11 +905,11 @@ goog.scope(function() {
 
   /**
    * Compute overhang
-   * @param {!treesaver.layout.BreakRecord} br The lastBlock inserted into the column
-   * @param {!treesaver.layout.Block} lastBlock The lastBlock inserted into the column
+   * @param {!treesaver.layout.BreakRecord} br The lastBlock inserted into the column.
+   * @param {!treesaver.layout.Block} lastBlock The lastBlock inserted into the column.
    * @param {number} colHeight
    * @param {number} height
-   * @return {number} The final column height required for this
+   * @return {number} The final column height required for this.
    */
   Page.computeOverhang = function(br, lastBlock, colHeight, height) {
     var contentOnlyOverhang,
@@ -1010,7 +1010,7 @@ goog.scope(function() {
 
   /**
    * Clone this page.
-   * @return {!treesaver.layout.Page} A clone of this page
+   * @return {!treesaver.layout.Page} A clone of this page.
    */
   Page.prototype.clone = function() {
     var p = Object.clone(this);
@@ -1023,7 +1023,7 @@ goog.scope(function() {
 
   if (goog.DEBUG) {
     Page.prototype.toString = function() {
-      return "[Page]";
+      return '[Page]';
     };
   }
 });

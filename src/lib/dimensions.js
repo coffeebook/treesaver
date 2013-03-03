@@ -145,7 +145,7 @@ goog.scope(function() {
    */
   dimensions.getOffsetTop = function(el) {
     return el && el.offsetTop || 0;
-  }
+  };
 
   /**
    * Helper for setting a CSS value in pixels

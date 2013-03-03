@@ -18,7 +18,7 @@ goog.scope(function() {
    */
   styles.insertRule = function(selector, text) {
     styles.stylesheet_.insertRule(selector + '{' + text + '}', 0);
-  }
+  };
 
   styles.stylesheet_ = document.createElement('style');
   styles.stylesheet_.setAttribute('type', 'text/css');
